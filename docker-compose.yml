@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  item-app:
+    # menggunakan gambar item-app v1
+    image: ghcr.io/kinkusuma/item-app:v1
+    # port mapping agar bisa diakses di port 80
+    ports:
+      - 80:8080
+    # memastikan hanya berjalan jika item-db diluncurkan
+    depends_on:
+      - item-db
+    # selalu restart jika berhenti
+    restart: always
+    
+  item-db:
+    # menggunakan image mongo versi 3
+    image: mongo:3
+    # menggunakan volume app-db
+    volumes:
+      - app-db:/data/db
+    # selalu restart jika berhenti
+    restart: always
+
+volumes:
+  app-db:
