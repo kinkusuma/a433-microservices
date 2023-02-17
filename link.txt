@@ -1,0 +1,2 @@
+repo: https://github.com/kinkusuma/a433-microservices
+image: ghcr.io/kinkusuma/item-app:v1
