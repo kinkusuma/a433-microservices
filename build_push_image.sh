@@ -10,7 +10,7 @@ docker image ls -a
 docker tag item-app:v1 ghcr.io/kinkusuma/item-app:v1
 
 # login ke registry
-echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+echo $CR_PAT | docker login ghcr.io -u kinkusuma --password-stdin
 
 # push image ke registry
 docker push ghcr.io/kinkusuma/item-app:v1
