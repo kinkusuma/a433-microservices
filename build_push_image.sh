@@ -4,7 +4,7 @@
 docker build -t item-app:v1 .
 
 # menampilkan image lokal
-docker image ls -a
+docker images
 
 # menyesuaikan nama image sesuai format registry
 docker tag item-app:v1 ghcr.io/kinkusuma/item-app:v1
