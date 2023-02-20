@@ -9,6 +9,6 @@ ENV NODE_ENV=production DB_HOST=item-db
 # menjalankan perintah install dan build app
 RUN npm install --production --unsafe-perm && npm run build
 # mengexpose port yang digunakan
-EXPOSE 8000
+EXPOSE 8080
 # menjalankan aplikasi
 CMD ["npm", "start"]
