@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build docker image
-docker build -t karsajob-uis:latest .
+docker build -t karsajob-ui:latest .
 
 # menyesuaikan nama image sesuai format registry
 docker tag karsajobs-ui:latest ghcr.io/kinkusuma/karsajobs-ui:latest
